@@ -22,7 +22,7 @@ formSearch.addEventListener('submit', onSearchBtnSubmit);
 function onSearchBtnSubmit(event) {
   event.preventDefault();
 
-  const searchValue = formSearch.elements.search.value;
+  const searchValue = formSearch.elements.search.value.trim();
 
   if (searchValue === '') {
     galleryElem.innerHTML = '';
